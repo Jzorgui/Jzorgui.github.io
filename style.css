@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/*font-family: 'Raleway', sans-serif;*/
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #F1B01B;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*Entre les sections*/
+.separator {
+  height: 3px;
+  width: 5%;
+  border: none;
+  box-shadow: none;
+  background-color: #3498DB;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.separator2 {
+  height: 3px;
+  width: 15%;
+  border: none;
+  box-shadow: none;
+  background-color: #ffffff;
+}
+
+.separator3 {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: #000000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+/* header */
+.header {
+  background-color: #3498DB;
+  height: 70px;
+  line-height: 70px;
+
+  /* menu fixe */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:101; /* fixe navbar en premier plan */
+  /* end menu fixe */
+}
+
+/*HEADER PAGE PROJET*/
+.header2 {
+  background-color: #3498DB;
+  height: 70px;
+  line-height: 70px;
+}
+
+.logo {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  float: left;
+}
+
+.logo:hover {
+  color: #F1B01B;
+}
+
+.menu-desktop, .menu-mobile {
+  float: right;
+}
+
+.menu-desktop a {
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.menu-mobile i{
+  color:#ffffff;
+}
+
+.menu-desktop a:hover, .menu-mobile i:hover {
+  color: #F1B01B;
+}
+
+/*Menu Responsive*/
+@media screen and (max-width:991px){
+  .menu-desktop{
+    display: none;
+  }
+}
+@media screen and (min-width:992px){
+  .menu-mobile{
+    display: none;
+  }
+}
+
+
+/* bannière */
+.banner {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.ban {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.ban img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.inner-banner {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-banner h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.inner-banner h4 {
+  color: #ffffff;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.inner-banner .btn-custom {
+  background-color: #3498DB;
+  color: #ffffff;
+  border: none;
+}
+
+.inner-banner .btn-custom:hover {
+  background-color: #F1B01B;
+}
+
+/* inner-banner responsive*/
+@media screen and (max-width: 480px){
+    .inner-banner {
+        top: 20%;
+    }
+    .inner-banner h1 {
+        font-size: 15px;
+    }
+    .inner-banner h4 {
+        font-size: 12px;
+    }
+    .inner-banner .btn-custom {
+        font-size: 11px;
+    }
+}
+
+/* parcours scolaire*/
+.parsco{
+  text-align: center;
+}
+
+.parsco a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Responsive parcours scolaire*/
+@media screen and (min-width: 481px) and (max-width: 575px){
+    .parsco{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .parsco h1{
+        font-size: 25px;
+    }
+    .parsco .card{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .parsco{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .parsco h1{
+        font-size: 21px;
+    }
+    .parsco .card{
+        font-size: 11px;
+    }
+}
+
+/*Responsive parcours pro*/
+@media screen and (min-width: 481px) and (max-width: 575px){
+    .parpro h1{
+        font-size: 25px;
+    }
+    .parpro h4{
+        font-size: 17px;
+    }
+    .parpro .tab-content{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .parpro h1{
+        font-size: 21px;
+    }
+    .parpro h4{
+        font-size: 13px;
+    }
+    .parpro .tab-content{
+        font-size: 11px;
+    }
+}
+
+/*Responsive parcours perso*/
+@media screen and (min-width: 481px) and (max-width: 575px){
+    .perso{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .perso h1{
+        font-size: 25px;
+    }
+    .perso p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .perso{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .perso h1{
+        font-size: 21px;
+    }
+    .perso p{
+        font-size: 11px;
+    }
+}
+
+
+/* contact */
+.footer {
+  background-color: #3498DB;
+  text-align: center;
+  color: #ffffff;
+  padding: 1em;
+  line-height: 30px;
+}
+
+.footer i {
+  color:#fff;
+  font-size:50px;
+}
+
+.footer a {
+  color: #ffffff;
+}
+
+ .footer a:hover, .footer a i:hover {
+   color: #F1B01B;
+ }
+
+#contact {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/*Responsive contact*/
+@media screen and (min-width: 481px) and (max-width: 575px){
+    .footer h1, .footer i{
+        font-size: 25px;
+    }
+    #logos-contact{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .footer h1, .footer i{
+        font-size: 21px;
+    }
+    #logos-contact{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 991px){
+  #logos-contact{
+    padding-bottom: 6px;
+  }
+}
